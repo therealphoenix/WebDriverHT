@@ -113,6 +113,7 @@ public class AddColumns {
 	}
 
 	public void submitCreatingTable() {
+		//scroll down page
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
 		jse.executeScript("window.scrollBy(0,250)", "");
 		driver.findElement(submitCreationLocator).click();

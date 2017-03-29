@@ -3,12 +3,9 @@ package com.klindziuk.testtable;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
-import java.io.File;
+
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxBinary;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxProfile;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
@@ -44,18 +41,18 @@ public class DataTableTest {
 		// check for right page is opened(sometimes it PRESENT sometimes NOT. WTF ???)
 		// Assert.assertTrue("localhost / localhost / auth / users | phpMyAdmin 4.5.1".equals(driver.getTitle()));
 		// check u_id
-		Assert.assertTrue(tablePage.checkElement(tablePage.user1IdSelector, "1"));
+		Assert.assertTrue(tablePage.checkWebElement(tablePage.user1IdLocator, "1"));
 		// check u_login
-		Assert.assertTrue(tablePage.checkElement(tablePage.user1LoginSelector, "user1"));
+		Assert.assertTrue(tablePage.checkWebElement(tablePage.user1LoginLocator, "user1"));
 		// check u_password
 		Assert.assertTrue(
-				tablePage.checkElement(tablePage.user1PasswordSelector, "e38ad214943daad1d64c102faec29de4afe9da3d"));
+				tablePage.checkWebElement(tablePage.user1PasswordLocator, "e38ad214943daad1d64c102faec29de4afe9da3d"));
 		// check u_email
-		Assert.assertTrue(tablePage.checkElement(tablePage.user1EmailSelector, "user1@mail.com"));
+		Assert.assertTrue(tablePage.checkWebElement(tablePage.user1EmailLocator, "user1@mail.com"));
 		// check u_name
-		Assert.assertTrue(tablePage.checkElement(tablePage.user1NameSelector, "Pupkin"));
+		Assert.assertTrue(tablePage.checkWebElement(tablePage.user1NameLocator, "Pupkin"));
 		// check u_remember
-		Assert.assertTrue(tablePage.checkElement(tablePage.user1RememberSelector, ""));
+		Assert.assertTrue(tablePage.checkWebElement(tablePage.user1RememberLocator, ""));
 	}
 
 	@Test
@@ -65,17 +62,17 @@ public class DataTableTest {
 		// Assert.assertTrue("localhost / localhost / auth / users | phpMyAdmin
 		// 4.5.1".equals(driver.getTitle()));
 		// check u_id
-		Assert.assertTrue(tablePage.checkElement(tablePage.user2IdSelector, "2"));
+		Assert.assertTrue(tablePage.checkWebElement(tablePage.user2IdLocator, "2"));
 		// check u_login
-		Assert.assertTrue(tablePage.checkElement(tablePage.user2LoginSelector, "user2"));
+		Assert.assertTrue(tablePage.checkWebElement(tablePage.user2LoginLocator, "user2"));
 		// check u_password
 		Assert.assertTrue(
-				tablePage.checkElement(tablePage.user2PasswordSelector, "2aa60a8ff7fcd473d321e0146afd9e26df395147"));
+				tablePage.checkWebElement(tablePage.user2PasswordLocator, "2aa60a8ff7fcd473d321e0146afd9e26df395147"));
 		// check u_email
-		Assert.assertTrue(tablePage.checkElement(tablePage.user2EmailSelector, "user2@mail.com"));
+		Assert.assertTrue(tablePage.checkWebElement(tablePage.user2EmailLocator, "user2@mail.com"));
 		// check u_name
-		Assert.assertTrue(tablePage.checkElement(tablePage.user2NameSelector, "Smith"));
+		Assert.assertTrue(tablePage.checkWebElement(tablePage.user2NameLocator, "Smith"));
 		// check u_remember
-		Assert.assertTrue(tablePage.checkElement(tablePage.user2RememberSelector, ""));
+		Assert.assertTrue(tablePage.checkWebElement(tablePage.user2RememberLocator, ""));
 	}
 }

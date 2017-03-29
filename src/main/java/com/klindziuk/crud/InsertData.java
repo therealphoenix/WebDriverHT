@@ -31,13 +31,8 @@ public class InsertData {
 	public void openInsertMenu() {
 		driver.findElement(insertMenuLocator).click();
 	}
-	public void waitFor() {
-		WebDriverWait wait = new WebDriverWait(driver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(buttonYesLocator));
-	}
 
 	public void fillData() {
-
 		driver.findElement(user1IdFormLocator).sendKeys("1");
 		driver.findElement(user1LoginFormLocator).sendKeys("user1");
 		driver.findElement(user1PasswordFormLocator).sendKeys("e38ad214943daad1d64c102faec29de4afe9da3d");

@@ -4,12 +4,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class LoginPage {
-	WebDriver driver;
-	By loginButtonLocator = By.xpath("//input[@type='submit']");
-	By loginUserNameLocator = By.name("pma_username");
-	By loginPasswordLocator = By.name("pma_password");
-	By languageLocator = By.cssSelector("#sel-lang");
-	By englishLanguageLocator = By.cssSelector("#sel-lang > option:nth-child(9)");
+private	WebDriver driver;
+private	By loginButtonLocator = By.xpath("//input[@type='submit']");
+private	By loginUserNameLocator = By.name("pma_username");
+private	By loginPasswordLocator = By.name("pma_password");
+private	By languageLocator = By.cssSelector("#sel-lang");
+private	By englishLanguageLocator = By.cssSelector("#sel-lang > option:nth-child(9)");
 
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
