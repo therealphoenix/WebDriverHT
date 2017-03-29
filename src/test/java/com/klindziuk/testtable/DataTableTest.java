@@ -38,8 +38,8 @@ public class DataTableTest {
 
 	@Test
 	public void testData_User1() {
-		// check for right page is opened(sometimes it PRESENT sometimes NOT. WTF ???)
-		// Assert.assertTrue("localhost / localhost / auth / users | phpMyAdmin 4.5.1".equals(driver.getTitle()));
+		// check for right page is opened
+		Assert.assertTrue("localhost / localhost / auth | phpMyAdmin 4.5.1".equals(driver.getTitle()));
 		// check u_id
 		Assert.assertTrue(tablePage.checkWebElement(tablePage.user1IdLocator, "1"));
 		// check u_login
@@ -57,17 +57,14 @@ public class DataTableTest {
 
 	@Test
 	public void testData_User2() {
-		// check for right page is opened(sometimes it PRESENT sometimes NOT.
-		// WTF ???)
-		// Assert.assertTrue("localhost / localhost / auth / users | phpMyAdmin
-		// 4.5.1".equals(driver.getTitle()));
+		// check for right page is opened
+		Assert.assertTrue("localhost / localhost / auth / users | phpMyAdmin 4.5.1".equals(driver.getTitle()));
 		// check u_id
 		Assert.assertTrue(tablePage.checkWebElement(tablePage.user2IdLocator, "2"));
 		// check u_login
 		Assert.assertTrue(tablePage.checkWebElement(tablePage.user2LoginLocator, "user2"));
 		// check u_password
-		Assert.assertTrue(
-				tablePage.checkWebElement(tablePage.user2PasswordLocator, "2aa60a8ff7fcd473d321e0146afd9e26df395147"));
+		Assert.assertTrue(tablePage.checkWebElement(tablePage.user2PasswordLocator, "2aa60a8ff7fcd473d321e0146afd9e26df395147"));
 		// check u_email
 		Assert.assertTrue(tablePage.checkWebElement(tablePage.user2EmailLocator, "user2@mail.com"));
 		// check u_name
