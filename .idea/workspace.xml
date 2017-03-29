@@ -24,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CreateDB.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CreateDB.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/klindziuk/crud/CreateDB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="50" column="1" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
+            <state relative-caret-position="236">
+              <caret line="47" column="6" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -97,11 +97,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InsertData.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="InsertData.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/klindziuk/crud/InsertData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+            <state relative-caret-position="119">
+              <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
               <folding>
                 <element signature="e#2457#2458#0" expanded="true" />
                 <element signature="e#2509#2510#0" expanded="true" />
@@ -148,9 +148,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/klindziuk/crud/DropDB.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/klindziuk/testtable/TablePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/klindziuk/crud/AddDB.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/klindziuk/crud/CreateDB.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/klindziuk/testtable/TableTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/klindziuk/testtable/DataTableTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/klindziuk/crud/CreateDB.java" />
       </list>
     </option>
   </component>
@@ -803,14 +803,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1490788999190</updated>
-      <workItem from="1490789006276" duration="10117000" />
+      <workItem from="1490789006276" duration="11090000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="D__Program_Files_EclipseEE_WebDriverHT_src_test_java_com_klindziuk_testtable_TestSuit_xml - 2017.03.29 at 17h 59m 39s.xml">
-      <configuration name="D:/Program Files/EclipseEE/WebDriverHT/src/test/java/com/klindziuk/testtable/TestSuit.xml" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="D__Program_Files_EclipseEE_WebDriverHT_src_test_java_com_klindziuk_testtable_TestSuit_xml - 2017.03.29 at 18h 04m 47s.xml">
       <configuration name="D:/Program Files/EclipseEE/WebDriverHT/src/test/java/com/klindziuk/testtable/TestSuit.xml" configurationId="TestNG" />
     </history-entry>
@@ -838,9 +835,12 @@
     <history-entry file="D__Program_Files_EclipseEE_WebDriverHT_src_test_java_com_klindziuk_testtable_TestSuit_xml - 2017.03.29 at 18h 22m 36s.xml">
       <configuration name="D:/Program Files/EclipseEE/WebDriverHT/src/test/java/com/klindziuk/testtable/TestSuit.xml" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="D__Program_Files_EclipseEE_WebDriverHT_src_test_java_com_klindziuk_testtable_TestSuit_xml - 2017.03.29 at 22h 58m 52s.xml">
+      <configuration name="D:/Program Files/EclipseEE/WebDriverHT/src/test/java/com/klindziuk/testtable/TestSuit.xml" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10117000" />
+    <option name="totallyTimeSpent" value="11090000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="728" extended-state="0" />
@@ -912,14 +912,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/klindziuk/crud/CreateDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="50" column="1" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/klindziuk/crud/DropDB.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-139">
@@ -965,12 +957,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/klindziuk/crud/InsertData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        <state relative-caret-position="119">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding>
             <element signature="e#2457#2458#0" expanded="true" />
             <element signature="e#2509#2510#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/klindziuk/crud/CreateDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="47" column="6" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>

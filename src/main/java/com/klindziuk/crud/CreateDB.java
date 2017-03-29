@@ -45,7 +45,7 @@ public class CreateDB {
         insertData.openInsertMenu();
         insertData.fillData();
         insertData.pushButton();
-        insertData.moveToBrowse();
+    //    insertData.moveToBrowse();
         insertData.logOut();
     }
 }
