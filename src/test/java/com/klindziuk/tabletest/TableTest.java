@@ -50,6 +50,5 @@ public class TableTest extends BaseTest{
 		Assert.assertEquals(tablePage.getCollation(), "utf8_general_ci");
 		// check AutoIncrement
 		Assert.assertEquals(tablePage.getAutoIncrement(), "3");
-		
 	}
 }

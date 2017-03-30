@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="84e91c8f-5cda-4ef8-b619-d5b164467468" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/klindziuk/dbactions/OperationCreateDB.java" afterPath="$PROJECT_DIR$/src/main/java/com/klindziuk/dbactions/OperationCreateDB.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/klindziuk/dbactions/OperationDropDB.java" afterPath="$PROJECT_DIR$/src/main/java/com/klindziuk/dbactions/OperationDropDB.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/klindziuk/driver/BrowserDriver.java" afterPath="$PROJECT_DIR$/src/main/java/com/klindziuk/driver/BrowserDriver.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/klindziuk/tabletest/TableTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/klindziuk/tabletest/TableTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/html/overview.html" afterPath="$PROJECT_DIR$/test-output/html/overview.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/html/suite1_test1_results.html" afterPath="$PROJECT_DIR$/test-output/html/suite1_test1_results.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/html/suite1_test2_results.html" afterPath="$PROJECT_DIR$/test-output/html/suite1_test2_results.html" />
     </list>
     <ignored path="WebDriverHT.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BrowserDriver.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BrowserDriver.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/klindziuk/driver/BrowserDriver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+            <state relative-caret-position="85">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -112,7 +108,7 @@
       <file leaf-file-name="BaseTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/klindziuk/tabletest/BaseTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
+            <state relative-caret-position="-255">
               <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -135,11 +131,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TableTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TableTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/klindziuk/tabletest/TableTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="51" column="48" selection-start-line="51" selection-start-column="48" selection-end-line="51" selection-end-column="48" />
+            <state relative-caret-position="714">
+              <caret line="53" column="1" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -187,7 +183,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/klindziuk/dbactions/OperationAddDB.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/klindziuk/dbactions/OperationInsertData.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/klindziuk/dbactions/OperationAddColumns.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/klindziuk/driver/BrowserDriver.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/klindziuk/tabletest/BaseTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/klindziuk/tabletest/DataTableTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/klindziuk/tabletest/LoginPage.java" />
@@ -195,6 +190,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/klindziuk/dbactions/OperationCreateDB.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/klindziuk/dbactions/OperationDropDB.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/klindziuk/tabletest/TableTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/klindziuk/driver/BrowserDriver.java" />
       </list>
     </option>
   </component>
@@ -944,7 +940,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1490788999190</updated>
-      <workItem from="1490789006276" duration="36640000" />
+      <workItem from="1490789006276" duration="36744000" />
     </task>
     <task id="LOCAL-00001" summary="-browsertype, tests separated from pageObject, renamed classess and packages">
       <created>1490888043995</created>
@@ -960,7 +956,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490888208126</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="-browsertype, tests separated from pageObject, renamed classess and packages">
+      <created>1490888637411</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1490888637411</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -996,7 +999,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36640000" />
+    <option name="totallyTimeSpent" value="36744000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="728" extended-state="0" />
@@ -1082,18 +1085,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/klindziuk/tabletest/BaseTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1395#1396#0" expanded="true" />
-            <element signature="e#1429#1430#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/klindziuk/dbactions/OperationAddColumns.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1019">
@@ -1115,16 +1106,6 @@
         <state relative-caret-position="320">
           <caret line="55" column="55" selection-start-line="55" selection-start-column="55" selection-end-line="55" selection-end-column="55" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/klindziuk/driver/BrowserDriver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1169,8 +1150,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/klindziuk/tabletest/TableTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="51" column="48" selection-start-line="51" selection-start-column="48" selection-end-line="51" selection-end-column="48" />
+        <state relative-caret-position="714">
+          <caret line="53" column="1" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/klindziuk/tabletest/BaseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1395#1396#0" expanded="true" />
+            <element signature="e#1429#1430#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/klindziuk/driver/BrowserDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

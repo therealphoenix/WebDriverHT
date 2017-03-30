@@ -2,14 +2,8 @@ package com.klindziuk.driver;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxProfile;
-
 import java.io.IOException;
 
-/**
- * Created by Hp on 30.03.2017.
- */
 public enum BrowserDriver {
     /**
      *  We can add here another browsers to run tests with them
