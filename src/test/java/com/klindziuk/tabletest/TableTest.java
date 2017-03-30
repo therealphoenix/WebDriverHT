@@ -49,7 +49,7 @@ public class TableTest extends BaseTest{
 		// check collation
 		Assert.assertEquals(tablePage.getCollation(), "utf8_general_ci");
 		// check AutoIncrement
-		Assert.assertEquals(tablePage.getIdAutoIncrement(), "AUTO_INCREMENT");
+		Assert.assertEquals(tablePage.getAutoIncrement(), "3");
 		
 	}
 }
