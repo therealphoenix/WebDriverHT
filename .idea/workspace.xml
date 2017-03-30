@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="84e91c8f-5cda-4ef8-b619-d5b164467468" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/klindziuk/driver/BrowserDriver.java" afterPath="$PROJECT_DIR$/src/main/java/com/klindziuk/driver/BrowserDriver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/klindziuk/tabletest/TableTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/klindziuk/tabletest/TableTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/klindziuk/tabletest/TablePage.java" afterPath="$PROJECT_DIR$/src/main/java/com/klindziuk/tabletest/TablePage.java" />
     </list>
     <ignored path="WebDriverHT.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,7 +57,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BrowserDriver.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BrowserDriver.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/klindziuk/driver/BrowserDriver.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
@@ -90,16 +89,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TablePage.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TablePage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/klindziuk/tabletest/TablePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="221" column="1" selection-start-line="221" selection-start-column="1" selection-end-line="221" selection-end-column="1" />
+            <state relative-caret-position="218">
+              <caret line="216" column="39" selection-start-line="216" selection-start-column="39" selection-end-line="216" selection-end-column="39" />
               <folding>
                 <element signature="e#5160#5161#0" expanded="true" />
                 <element signature="e#5216#5217#0" expanded="true" />
-                <element signature="e#9227#9228#0" expanded="true" />
-                <element signature="e#9300#9301#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -186,11 +183,11 @@
         <option value="$PROJECT_DIR$/src/test/java/com/klindziuk/tabletest/BaseTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/klindziuk/tabletest/DataTableTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/klindziuk/tabletest/LoginPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/klindziuk/tabletest/TablePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/klindziuk/dbactions/OperationCreateDB.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/klindziuk/dbactions/OperationDropDB.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/klindziuk/tabletest/TableTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/klindziuk/driver/BrowserDriver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/klindziuk/tabletest/TablePage.java" />
       </list>
     </option>
   </component>
@@ -940,7 +937,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1490788999190</updated>
-      <workItem from="1490789006276" duration="36744000" />
+      <workItem from="1490789006276" duration="36821000" />
     </task>
     <task id="LOCAL-00001" summary="-browsertype, tests separated from pageObject, renamed classess and packages">
       <created>1490888043995</created>
@@ -963,7 +960,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490888637411</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="-browsertype, tests separated from pageObject, renamed classess and packages,&#10; baseclass for tests">
+      <created>1490888760658</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1490888760658</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -999,7 +1003,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36744000" />
+    <option name="totallyTimeSpent" value="36821000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="728" extended-state="0" />
@@ -1040,7 +1044,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="-browsertype, tests separated from pageObject, renamed classess and packages" />
-    <option name="LAST_COMMIT_MESSAGE" value="-browsertype, tests separated from pageObject, renamed classess and packages" />
+    <MESSAGE value="-browsertype, tests separated from pageObject, renamed classess and packages,&#10; baseclass for tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="-browsertype, tests separated from pageObject, renamed classess and packages,&#10; baseclass for tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1135,19 +1140,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/klindziuk/tabletest/TablePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="221" column="1" selection-start-line="221" selection-start-column="1" selection-end-line="221" selection-end-column="1" />
-          <folding>
-            <element signature="e#5160#5161#0" expanded="true" />
-            <element signature="e#5216#5217#0" expanded="true" />
-            <element signature="e#9227#9228#0" expanded="true" />
-            <element signature="e#9300#9301#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/klindziuk/tabletest/TableTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
@@ -1176,6 +1168,17 @@
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/klindziuk/tabletest/TablePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="216" column="39" selection-start-line="216" selection-start-column="39" selection-end-line="216" selection-end-column="39" />
+          <folding>
+            <element signature="e#5160#5161#0" expanded="true" />
+            <element signature="e#5216#5217#0" expanded="true" />
           </folding>
         </state>
       </provider>

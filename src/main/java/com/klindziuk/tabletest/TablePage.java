@@ -214,9 +214,6 @@ public class TablePage {
         return driver.findElement(collationLocator).getText();
     }
 
-    public String getAutoIncrement() {
-        return driver.findElement(autoIncrementLocator).getText();
+    public String getAutoIncrement() { return driver.findElement(autoIncrementLocator).getText();
     }
-
-
 }
