@@ -8,6 +8,6 @@
   <properties />
   
   
-            <testcase name="testTable" time="2,409" classname="com.klindziuk.testtable.TableTest" />
+            <testcase name="testTable" time="2,409" classname="com.klindziuk.tabletest.TableTest" />
       
 </testsuite>
