@@ -55,13 +55,19 @@ public class OperationAddColumns {
 	}
 	
 	public void waitForAdditionalComumns() {
-		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebDriverWait wait = new WebDriverWait(driver, 5);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(lengthRememberLocator));
 	}
-	
+
 	public void waitForStructure() {
-		WebDriverWait wait = new WebDriverWait(driver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(iconStructureLocator));
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, 2);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(iconStructureLocator));
+		}
+		catch(TimeoutException toex){
+			WebDriverWait wait1 = new WebDriverWait(driver, 1);
+			wait1.until(ExpectedConditions.visibilityOfElementLocated(exceptionLocator));
+		}
 	}
 	
 		public void addNamesOfColumn() {
