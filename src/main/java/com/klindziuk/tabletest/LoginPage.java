@@ -1,5 +1,7 @@
 package com.klindziuk.tabletest;
 
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,6 +12,7 @@ private	By loginButtonLocator = By.xpath("//input[@type='submit']");
 private	By loginUserNameLocator = By.name("pma_username");
 private	By loginPasswordLocator = By.name("pma_password");
 private	By englishLanguageLocator = By.xpath("//select[@id = 'sel-lang']//*[text() = 'English']");
+private static	Logger logger = Logger.getLogger("LoginPage");
 
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
@@ -41,9 +44,11 @@ private	By englishLanguageLocator = By.xpath("//select[@id = 'sel-lang']//*[text
 	}
 
 	public void loginAs(String userName, String password) {
+		logger.info("Authorization started...");
 		setEnglish();
 		setUserName(userName);
 		setPassword(password);
 		pushLoginButton();
+		logger.info("Authorization completed successfully.");
 	}
 }

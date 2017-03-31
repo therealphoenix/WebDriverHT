@@ -2,6 +2,7 @@ package com.klindziuk.tabletest;
 
 import java.util.concurrent.TimeUnit;
 import com.klindziuk.driver.BrowserDriver;
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
@@ -17,6 +18,7 @@ public class BaseTest {
 
     @BeforeSuite
     public void suitSetup() {
+        PropertyConfigurator.configure("Log4j.properties");
         OperationCreateDB run = new OperationCreateDB();
         run.create();
     }

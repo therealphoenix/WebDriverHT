@@ -1,5 +1,6 @@
 package com.klindziuk.tabletest;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,6 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class TablePage {
+    private static Logger logger = Logger.getLogger("TablePage");
     private WebDriver driver;
     private By dataBaseLocator = By.linkText("auth");
     private By tableLocator = By.cssSelector("#row_tbl_1 > th:nth-child(2) > a:nth-child(1)");
@@ -53,31 +55,39 @@ public class TablePage {
         if ((!driver.getTitle().equals("localhost / localhost | phpMyAdmin 4.5.1"))) {
             throw new IllegalStateException("Invalid page opened");
         }
+
     }
 
     // open database
     public void selectDatabase() {
+        logger.info("Instantiating test...");
         driver.findElement(dataBaseLocator).click();
+        logger.info("Database  selected.");
     }
 
     // open table
     public void selectTable() {
         driver.findElement(tableLocator).click();
+        logger.info("Table selected.");
     }
 
     // open structure
     public void selectStructure() {
         driver.findElement(structureLocator).click();
+        logger.info("Structure opened.");
     }
 
     // open columns
     public void selectColumns() {
+        logger.info("Columns opened.");
         driver.findElement(columnLocator).click();
     }
 
     public void logOut() {
         driver.findElement(logOutLocator).click();
         driver.close();
+        logger.info("Logging out...");
+        logger.info("Test completed.");
        }
 
     public String getUser1Id() {

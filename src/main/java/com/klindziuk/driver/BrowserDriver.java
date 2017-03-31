@@ -5,6 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.io.IOException;
 
 public enum BrowserDriver {
+
     /**
      *  We can add here another browsers to run tests with them
      *  For Example:

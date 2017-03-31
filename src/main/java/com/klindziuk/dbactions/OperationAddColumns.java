@@ -36,6 +36,7 @@ public class OperationAddColumns {
 	private By iconStructureLocator = By.cssSelector(".ic_normalize");
 	private By exceptionLocator = By.cssSelector("div.print_ignore:nth-child(4) > label:nth-child(3)");
 
+
 	public OperationAddColumns(WebDriver driver) {
 		this.driver = driver;
 	}

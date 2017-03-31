@@ -24,6 +24,7 @@ public class OperationInsertData {
 	private By user2RememberFormLocator = By.cssSelector("#field_12_3");
 	private By selectLocator = By.id("select");
 
+
 	public OperationInsertData(WebDriver driver) {
 		this.driver = driver;
 	}
@@ -33,6 +34,7 @@ public class OperationInsertData {
 	}
 
 	public void fillData() {
+
 		driver.findElement(user1IdFormLocator).sendKeys("1");
 		driver.findElement(user1LoginFormLocator).sendKeys("user1");
 		driver.findElement(user1PasswordFormLocator).sendKeys("e38ad214943daad1d64c102faec29de4afe9da3d");
