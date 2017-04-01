@@ -16,7 +16,7 @@ public class OperationDropDB {
     private By submitButtonLocator = By.cssSelector(".mult_submit");
     private By popUpMenuButtonLocator = By.cssSelector(".submitOK");
     private By logOutLocator = By.cssSelector(".ic_s_loggoff");
-    private static Logger logger = Logger.getLogger("OperationDropDB");
+    private final static Logger logger = Logger.getLogger(OperationDropDB.class);
 
     public void removeDB() {
         driver = BrowserDriver.CHROME.getDriver();

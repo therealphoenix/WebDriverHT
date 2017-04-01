@@ -12,7 +12,7 @@ private	By loginButtonLocator = By.xpath("//input[@type='submit']");
 private	By loginUserNameLocator = By.name("pma_username");
 private	By loginPasswordLocator = By.name("pma_password");
 private	By englishLanguageLocator = By.xpath("//select[@id = 'sel-lang']//*[text() = 'English']");
-private static	Logger logger = Logger.getLogger("LoginPage");
+private static final Logger logger = Logger.getLogger(LoginPage.class);
 
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;

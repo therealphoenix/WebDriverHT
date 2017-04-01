@@ -4,7 +4,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class OperationAddColumns {
+public class OperationAddTable {
 	private WebDriver driver;
 	private By tableLocator = By.name("table");
 	private By buttonSubmitLocator = By.xpath("//input[@type='submit']");
@@ -37,8 +37,21 @@ public class OperationAddColumns {
 	private By exceptionLocator = By.cssSelector("div.print_ignore:nth-child(4) > label:nth-child(3)");
 
 
-	public OperationAddColumns(WebDriver driver) {
+	public OperationAddTable(WebDriver driver) {
 		this.driver = driver;
+	}
+	public void createTable(){
+		addTable();
+		addColumns("2");
+		waitForAdditionalComumns();
+		addNamesOfColumn();
+		selectTypes();
+		setLengthOfValues();
+		setPrimaryKey();
+		setAutoIncrement();
+		selectTableCollation();
+		submitCreatingTable();
+		waitForStructure();
 	}
 
 	public void addTable() {
