@@ -10,10 +10,13 @@ public class OperationCreateDB {
     private WebDriver driver;
     private static final Logger LOGGER = Logger.getLogger(OperationCreateDB.class);
 
+    public OperationCreateDB(WebDriver driver) {
+        this.driver = driver;
+    }
+
     public void create() {
         LOGGER.info("Instantiating database creation.");
         try {
-            driver = BrowserDriver.CHROME.getDriver();
             LOGGER.info("Driver [" + driver.getClass().getSimpleName() + "] instantiated.");
             driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
             driver.manage().window().maximize();

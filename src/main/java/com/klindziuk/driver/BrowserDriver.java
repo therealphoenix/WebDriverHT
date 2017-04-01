@@ -25,7 +25,11 @@ public enum BrowserDriver {
         this.index = browserIndex;
     }
 
-    public WebDriver getDriver() {
+    public static  WebDriver getDriver() {
+        return CHROME.selectDriver();
+    }
+
+    private  WebDriver selectDriver() {
         switch (index) {
             case 1: {
                 System.setProperty("webdriver.chrome.driver", "D:/Java/Chrome/chromedriver.exe");

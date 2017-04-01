@@ -17,8 +17,11 @@ public class OperationDropDB {
     private By logOutLocator = By.cssSelector(".ic_s_loggoff");
     private final static Logger LOGGER = Logger.getLogger(OperationDropDB.class);
 
+    public OperationDropDB(WebDriver driver) {
+        this.driver = driver;
+    }
+
     public void removeDB() {
-        driver = BrowserDriver.CHROME.getDriver();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         driver.get(BrowserDriver.BASEURL);
