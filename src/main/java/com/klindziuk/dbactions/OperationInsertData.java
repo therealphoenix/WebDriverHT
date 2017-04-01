@@ -59,7 +59,7 @@ public class OperationInsertData {
         WebDriverWait wait = new WebDriverWait(driver, 5);
         wait.until(ExpectedConditions.visibilityOfElementLocated(selectLocator));
         driver.findElement(logOffButtonLocator).click();
-        driver.close();
+
     }
 
     public void insertData() {

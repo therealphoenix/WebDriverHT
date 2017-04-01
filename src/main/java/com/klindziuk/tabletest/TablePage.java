@@ -82,7 +82,6 @@ public class TablePage {
 
     public void logOut() {
         driver.findElement(logOutLocator).click();
-        driver.close();
         logger.info("Logging out...");
         logger.info("Test completed.");
        }

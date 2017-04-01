@@ -20,7 +20,6 @@ public enum BrowserDriver {
 
     public static final String BASEURL = "http://localhost/phpmyadmin/";
     private int index;
-
     BrowserDriver(int browserIndex) {
         this.index = browserIndex;
     }
@@ -29,7 +28,7 @@ public enum BrowserDriver {
         return CHROME.selectDriver();
     }
 
-    private  WebDriver selectDriver() {
+    public  WebDriver selectDriver() {
         switch (index) {
             case 1: {
                 System.setProperty("webdriver.chrome.driver", "D:/Java/Chrome/chromedriver.exe");

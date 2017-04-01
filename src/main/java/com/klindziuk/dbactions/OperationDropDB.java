@@ -22,8 +22,6 @@ public class OperationDropDB {
     }
 
     public void removeDB() {
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        driver.manage().window().maximize();
         driver.get(BrowserDriver.BASEURL);
         LOGGER.info("Removing database...");
         LoginPage loginPage = new LoginPage(driver);
@@ -40,7 +38,7 @@ public class OperationDropDB {
 
     public void logOut() {
         driver.findElement(logOutLocator).click();
-        driver.close();
+        driver.quit();
         LOGGER.info("Logging out.");
     }
 }
