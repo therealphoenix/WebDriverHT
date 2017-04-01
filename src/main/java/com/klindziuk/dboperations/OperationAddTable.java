@@ -1,4 +1,4 @@
-package com.klindziuk.dbactions;
+package com.klindziuk.dboperations;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;

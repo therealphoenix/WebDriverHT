@@ -1,4 +1,4 @@
-package com.klindziuk.dbactions;
+package com.klindziuk.dboperations;
 
 import java.util.concurrent.TimeUnit;
 import com.klindziuk.driver.BrowserDriver;

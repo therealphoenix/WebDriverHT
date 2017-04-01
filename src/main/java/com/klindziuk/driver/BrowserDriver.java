@@ -24,10 +24,6 @@ public enum BrowserDriver {
         this.index = browserIndex;
     }
 
-    public static  WebDriver getDriver() {
-        return CHROME.selectDriver();
-    }
-
     public  WebDriver selectDriver() {
         switch (index) {
             case 1: {

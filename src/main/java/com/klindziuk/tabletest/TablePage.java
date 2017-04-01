@@ -52,7 +52,6 @@ public class TablePage {
         if ((!driver.getTitle().equals("localhost / localhost | phpMyAdmin 4.5.1"))) {
             throw new IllegalStateException("Invalid page opened");
         }
-
     }
 
     // open database

@@ -1,6 +1,5 @@
 package com.klindziuk.tabletest;
 
-import java.util.concurrent.TimeUnit;
 import com.klindziuk.driver.BrowserDriver;
 import com.klindziuk.driver.SingletonDriver;
 import org.apache.log4j.PropertyConfigurator;
@@ -9,10 +8,9 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
-import com.klindziuk.dbactions.OperationDropDB;
-import com.klindziuk.dbactions.OperationCreateDB;
+import com.klindziuk.dboperations.OperationDropDB;
+import com.klindziuk.dboperations.OperationCreateDB;
 
-import static com.klindziuk.driver.BrowserDriver.CHROME;
 
 public class BaseTest {
     LoginPage loginPage;
@@ -32,7 +30,7 @@ public class BaseTest {
         OperationDropDB drop = new OperationDropDB(driver);
         drop.removeDB();
         drop.logOut();
-        CHROME.killDriver();
+        SingletonDriver.destroy();
     }
 
     @BeforeClass

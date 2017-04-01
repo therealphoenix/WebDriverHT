@@ -1,4 +1,4 @@
-package com.klindziuk.dbactions;
+package com.klindziuk.dboperations;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -59,7 +59,6 @@ public class OperationInsertData {
         WebDriverWait wait = new WebDriverWait(driver, 5);
         wait.until(ExpectedConditions.visibilityOfElementLocated(selectLocator));
         driver.findElement(logOffButtonLocator).click();
-
     }
 
     public void insertData() {

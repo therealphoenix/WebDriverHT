@@ -1,4 +1,4 @@
-package com.klindziuk.dbactions;
+package com.klindziuk.dboperations;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.*;

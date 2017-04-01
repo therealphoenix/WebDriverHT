@@ -1,6 +1,5 @@
-package com.klindziuk.dbactions;
+package com.klindziuk.dboperations;
 
-import java.util.concurrent.TimeUnit;
 import com.klindziuk.driver.BrowserDriver;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
