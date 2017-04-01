@@ -36,22 +36,8 @@ public class OperationAddTable {
 	private By iconStructureLocator = By.cssSelector(".ic_normalize");
 	private By exceptionLocator = By.cssSelector("div.print_ignore:nth-child(4) > label:nth-child(3)");
 
-
 	public OperationAddTable(WebDriver driver) {
 		this.driver = driver;
-	}
-	public void createTable(){
-		addTable();
-		addColumns("2");
-		waitForAdditionalComumns();
-		addNamesOfColumn();
-		selectTypes();
-		setLengthOfValues();
-		setPrimaryKey();
-		setAutoIncrement();
-		selectTableCollation();
-		submitCreatingTable();
-		waitForStructure();
 	}
 
 	public void addTable() {
@@ -75,11 +61,11 @@ public class OperationAddTable {
 
 	public void waitForStructure() {
 		try {
-			WebDriverWait wait = new WebDriverWait(driver, 2);
+			WebDriverWait wait = new WebDriverWait(driver, 5);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(iconStructureLocator));
 		}
 		catch(TimeoutException toex){
-			WebDriverWait wait1 = new WebDriverWait(driver, 1);
+			WebDriverWait wait1 = new WebDriverWait(driver, 5);
 			wait1.until(ExpectedConditions.visibilityOfElementLocated(exceptionLocator));
 		}
 	}
@@ -130,5 +116,19 @@ public class OperationAddTable {
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
 		jse.executeScript("window.scrollBy(0,250)", "");
 		driver.findElement(submitCreationLocator).click();
+	}
+
+	public void createTable(){
+		addTable();
+		addColumns("2");
+		waitForAdditionalComumns();
+		addNamesOfColumn();
+		selectTypes();
+		setLengthOfValues();
+		setPrimaryKey();
+		setAutoIncrement();
+		selectTableCollation();
+		submitCreatingTable();
+		waitForStructure();
 	}
 }
