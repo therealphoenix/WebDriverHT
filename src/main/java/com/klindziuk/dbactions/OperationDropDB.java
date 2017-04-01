@@ -16,14 +16,14 @@ public class OperationDropDB {
     private By submitButtonLocator = By.cssSelector(".mult_submit");
     private By popUpMenuButtonLocator = By.cssSelector(".submitOK");
     private By logOutLocator = By.cssSelector(".ic_s_loggoff");
-    private final static Logger logger = Logger.getLogger(OperationDropDB.class);
+    private final static Logger LOGGER = Logger.getLogger(OperationDropDB.class);
 
     public void removeDB() {
         driver = BrowserDriver.CHROME.getDriver();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         driver.get(BrowserDriver.BASEURL);
-        logger.info("Removing database...");
+        LOGGER.info("Removing database...");
         LoginPage loginPage = new LoginPage(driver);
         loginPage.loginAs("root", "root");
         driver.findElement(newDBLocator).click();
@@ -33,12 +33,12 @@ public class OperationDropDB {
         jse.executeScript("window.scrollBy(0,250)", "");
         driver.findElement(submitButtonLocator).click();
         driver.findElement(popUpMenuButtonLocator).click();
-        logger.info("Database removed successfully.");
+        LOGGER.info("Database removed successfully.");
     }
 
     public void logOut() {
         driver.findElement(logOutLocator).click();
         driver.close();
-        logger.info("Logging out.");
+        LOGGER.info("Logging out.");
     }
 }
