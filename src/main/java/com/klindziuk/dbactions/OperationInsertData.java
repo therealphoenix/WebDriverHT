@@ -7,7 +7,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class OperationInsertData {
     private WebDriver driver;
-    private By insertMenuLocator = By.cssSelector("img.ic_b_insrow:nth-child(1)");
+    private By insertMenuLocator = By.xpath("//*[@title='Insert']");
     private By logOffButtonLocator = By.cssSelector(".ic_s_loggoff");
     private By buttonYesLocator = By.cssSelector("#buttonYes");
     private By user1IdFormLocator = By.cssSelector("#field_1_3");
@@ -33,19 +33,22 @@ public class OperationInsertData {
         driver.findElement(insertMenuLocator).click();
     }
 
-    public void fillData() {
-        driver.findElement(user1IdFormLocator).sendKeys("1");
-        driver.findElement(user1LoginFormLocator).sendKeys("user1");
-        driver.findElement(user1PasswordFormLocator).sendKeys("e38ad214943daad1d64c102faec29de4afe9da3d");
-        driver.findElement(user1EmailFormLocator).sendKeys("user1@mail.com");
-        driver.findElement(user1NameFormLocator).sendKeys("Pupkin");
-        driver.findElement(user1RememberFormLocator).sendKeys("");
-        driver.findElement(user2IdFormLocator).sendKeys("2");
-        driver.findElement(user2LoginFormLocator).sendKeys("user2");
-        driver.findElement(user2PasswordFormLocator).sendKeys("2aa60a8ff7fcd473d321e0146afd9e26df395147");
-        driver.findElement(user2EmailFormLocator).sendKeys("user2@mail.com");
-        driver.findElement(user2NameFormLocator).sendKeys("Smith");
-        driver.findElement(user2RememberFormLocator).sendKeys("");
+    public void fillDataUser1(String id, String login, String password, String email, String name, String remember) {
+        driver.findElement(user1IdFormLocator).sendKeys(id);
+        driver.findElement(user1LoginFormLocator).sendKeys(login);
+        driver.findElement(user1PasswordFormLocator).sendKeys(password);
+        driver.findElement(user1EmailFormLocator).sendKeys(email);
+        driver.findElement(user1NameFormLocator).sendKeys(name);
+        driver.findElement(user1RememberFormLocator).sendKeys(remember);
+    }
+
+    public void fillDataUser2(String id, String login, String password, String email, String name, String remember) {
+        driver.findElement(user2IdFormLocator).sendKeys(id);
+        driver.findElement(user2LoginFormLocator).sendKeys(login);
+        driver.findElement(user2PasswordFormLocator).sendKeys(password);
+        driver.findElement(user2EmailFormLocator).sendKeys(email);
+        driver.findElement(user2NameFormLocator).sendKeys(name);
+        driver.findElement(user2RememberFormLocator).sendKeys(remember);
     }
 
     public void pushButton() {
@@ -61,7 +64,8 @@ public class OperationInsertData {
 
     public void insertData() {
         openInsertMenu();
-        fillData();
+        fillDataUser1("1", "user1", "e38ad214943daad1d64c102faec29de4afe9da3d", "user1@mail.com", "Pupkin", "");
+        fillDataUser2("2", "user2", "2aa60a8ff7fcd473d321e0146afd9e26df395147", "user2@mail.com", "Smith", "" );
         pushButton();
         logOut();
     }
